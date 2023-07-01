@@ -20,4 +20,4 @@
 ### Considerar
 * Instalar la librería requests, mediante pip install requests
 * Funcionamiento básico de requests
-![image](https://github.com/ProgramacioAvanzada-Tec-Utpl/ae2-2bim-aa23/assets/1165873/656e056c-4b84-4844-b015-b6a3a3dffe4a)
+![image](https://github.com/ProgramacioAvanzada-Tec-Utpl/ae2-2bim-aa23/assets/1165873/00f4863e-4d99-4068-9ec1-7519a4557aca)
