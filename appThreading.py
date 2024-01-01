@@ -11,13 +11,13 @@ def obtener_data():
     #    "https://www.otroejemplo.com",
     #    "https://www.ultimo-ejemplo.com"
     #]
-    with open("informacion/data.csv") as archivo:
+    with open("C:/UTPL 3semestre/Programacion Avanzada/Ejemplos/Semana_12/ae2-2bim-aa23/informacion/data.csv") as archivo:
         lineas = csv.reader(archivo, quotechar="|")
         for row in lineas:
             # pass
              cadena = row[0].split("|")[1]
              cadena = cadena.replace(" ", "+")
-             lista.append(row[0].split("|")[1])    
+             lista.append(cadena)    
 
     return lista
 
@@ -27,7 +27,7 @@ def worker(url):
     response = requests.get(url)
     if response.status_code == 200:
         # Escribir el contenido en un archivo de texto
-        url2={url.replace('https://', '').replace('www.', '').replace('es.wikipedia.org/wiki/', '')}
+        url2=url.replace('https://', '').replace('www.', '').replace('es.wikipedia.org/wiki/', '')
         print(url2)
         with open(f"salida/"+url2+".txt", "w", encoding='utf-8') as file:
             file.write(response.text)
